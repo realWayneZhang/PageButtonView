@@ -15,6 +15,7 @@
 		D091990D1DD48EBC004362F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D091990B1DD48EBC004362F0 /* LaunchScreen.storyboard */; };
 		D09199181DD48EBC004362F0 /* PageButtonViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D09199171DD48EBC004362F0 /* PageButtonViewDemoTests.m */; };
 		D09199231DD48EBC004362F0 /* PageButtonViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D09199221DD48EBC004362F0 /* PageButtonViewDemoUITests.m */; };
+		D09199331DD48EF4004362F0 /* PageButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = D09199321DD48EF4004362F0 /* PageButtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		D091991E1DD48EBC004362F0 /* PageButtonViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PageButtonViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09199221DD48EBC004362F0 /* PageButtonViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageButtonViewDemoUITests.m; sourceTree = "<group>"; };
 		D09199241DD48EBC004362F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D09199311DD48EF4004362F0 /* PageButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageButtonView.h; sourceTree = "<group>"; };
+		D09199321DD48EF4004362F0 /* PageButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageButtonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		D09198F11DD48EBB004362F0 = {
 			isa = PBXGroup;
 			children = (
+				D09199301DD48EF4004362F0 /* PageButtonView */,
 				D09198FC1DD48EBB004362F0 /* PageButtonViewDemo */,
 				D09199161DD48EBC004362F0 /* PageButtonViewDemoTests */,
 				D09199211DD48EBC004362F0 /* PageButtonViewDemoUITests */,
@@ -138,6 +142,15 @@
 				D09199241DD48EBC004362F0 /* Info.plist */,
 			);
 			path = PageButtonViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		D09199301DD48EF4004362F0 /* PageButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				D09199311DD48EF4004362F0 /* PageButtonView.h */,
+				D09199321DD48EF4004362F0 /* PageButtonView.m */,
+			);
+			path = PageButtonView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,7 @@
 				D09199051DD48EBC004362F0 /* ViewController.m in Sources */,
 				D09199021DD48EBB004362F0 /* AppDelegate.m in Sources */,
 				D09198FF1DD48EBB004362F0 /* main.m in Sources */,
+				D09199331DD48EF4004362F0 /* PageButtonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +429,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PageButtonViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winson.cheung.PageButtonViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 ";
 			};
 			name = Debug;
 		};
@@ -426,10 +443,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PageButtonViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winson.cheung.PageButtonViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 ";
 			};
 			name = Release;
 		};
